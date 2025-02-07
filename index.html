@@ -25,11 +25,13 @@
         <nav class="header-nav">
           <div class="header-wrap-menu">
             <a class="header" href="./index.html">Web<span class="logo_highlited">Studio</span></a>
-            <svg class="header-menu-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
+            <button class="header-menu" data-menu-open>
+              <svg class="header-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
           </div>
-          <ul class="header-link visually-hidden">
+          <ul class="header-link">
             <li class="header-list-item">
               <a class="header-link-item current" href="./index.html">Studio</a>
             </li>
@@ -41,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <address class="hero visually-hidden">
+        <address class="hero">
           <ul class="address">
             <li>
               <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -59,7 +61,7 @@
           <h1 class="main-section">Effective Solutions for Your Business</h1>
           <button class="section-btn" type="button" data-modal-open>Order Service</button>
         </div>
-      </section> 
+      <!-- </section>
       <section class="main-list-info">
         <div class="container">
           <h2 class="visually-hidden">lorem ispum</h2>
@@ -110,8 +112,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- 
+      </section> -->
+      <!--       
       <section class="photo-section">
         <div class="container">
           <h2 class="team">Our Team</h2>
@@ -335,9 +337,9 @@
             </li>
           </ul>
         </div>
-      </section>
+       </section> --> 
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-all-wrap">
         <div class="test">
           <a class="footer-logo" href="./index.html">Web<span class="footer-logo_highlited">Studio</span></a>
@@ -456,9 +458,9 @@
         </form>
       </div>
     </div>
-    <div class="backdrop-menu">
+    <div class="backdrop-menu" data-menu>
       <div class="modal-menu">
-        <button class="button-modal-menu" type="button" data-modal-close>
+        <button class="button-modal-menu" type="button" data-menu-close>
           <svg class="close-modal-menu" width="8" height="8">
             <use href="./images/icons.svg#icon-modal-button"></use>
           </svg>
@@ -520,5 +522,6 @@
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
