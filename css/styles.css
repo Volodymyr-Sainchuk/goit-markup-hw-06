@@ -50,6 +50,7 @@ body {
   max-width: 320px;
   margin: 0 auto;
   /* padding: 0 15px; */
+  padding: 0 28px;
 }
 .header-container {
   display: flex;
@@ -204,7 +205,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 24px;
+  /* gap: 24px; */
+  row-gap: 72px;
 }
 .main-list-info {
   display: flex;
@@ -226,7 +228,8 @@ body {
 }
 .second-section-items-block {
   position: relative;
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: center;
   justify-content: center;
   width: 264px;
@@ -241,6 +244,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 .main-list {
   /* color: #2e2f42;
@@ -276,7 +280,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 72px;
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 .photo-icons-container-list {
   width: 40px;
@@ -320,7 +325,9 @@ body {
 .team-list {
   background-color: #f4f4fd;
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 .portfolio-section {
   display: flex;
@@ -1038,11 +1045,32 @@ body {
     max-width: 100%;
   }
   .main-list-info {
-    max-width: 768px;
+    min-width: 768px;
+  }
+  .main-list {
+    text-align: left;
   }
   .main-section-list {
     flex-direction: row;
     flex-wrap: wrap;
+    /* width: calc((100% - 90px) / 2);
+    max-width: 768px; */
+    /* line-gap-override: 24px; */
+    column-gap: 24px;
+  }
+  .second-section-items {
+    max-width: 100%;
+    width: calc((100% - 48px) / 2);
+  }
+  .main-list-text {
+    max-width: 356px;
+  }
+  .photo-section {
+    min-width: 768px;
+  }
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
   }
 }
 
@@ -1072,9 +1100,46 @@ body {
     padding: 0 16px;
   }
   .main-header {
-    max-width: 1440px;
+    min-width: 1440px;
   }
   .main {
     max-width: 1440px;
+  }
+  .main-list-info {
+    min-width: 1440px;
+  }
+  .main-list {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .main-list-text {
+    max-width: 264px;
+  }
+  .main-list-info {
+    gap: 24px;
+  }
+  .second-section-items-block {
+    display: flex;
+  }
+  .second-section-icons {
+    display: flex;
+  }
+  .main-section-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .photo-section {
+    min-width: 1440px;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1157px) {
+  .container {
+    max-width: 768px;
+    padding: 0 108px;
   }
 }
