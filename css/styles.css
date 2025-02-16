@@ -552,7 +552,6 @@ body.modal-open {
 }
 .hero-menu {
   font-style: normal;
-  margin-top: 168px;
   margin-bottom: 48px;
 }
 .team-item-first {
@@ -1055,10 +1054,10 @@ body.modal-open {
 .textarea-container {
   margin-bottom: 16px;
 }
-.test {
+.text_and_icons-wrap {
   margin-bottom: 72px;
 }
-.media-wrap {
+.test {
   margin-bottom: 72px;
 }
 
@@ -1084,7 +1083,6 @@ body.modal-open {
   }
   .header-link {
     display: flex;
-    margin-right: 122px;
   }
   .header-menu {
     display: none;
@@ -1178,13 +1176,18 @@ body.modal-open {
     min-width: 165px;
   }
   .main-header {
-    max-width: 1440px;
     margin: 0 auto;
     padding-bottom: 0px;
     padding-top: 0px;
   }
-  .media-wrap {
-    margin-bottom: 104px;
+  .backdrop-menu {
+    display: none;
+  }
+  .text_and_icons-wrap {
+    margin-bottom: 72px;
+  }
+  .test {
+    margin-bottom: 0;
   }
 }
 
@@ -1219,7 +1222,6 @@ body.modal-open {
     padding: 0 16px;
   }
   .main-header {
-    max-width: 1440px;
     margin: 0 auto;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -1230,7 +1232,6 @@ body.modal-open {
     padding: 188px 0;
   }
   .main-list-info {
-    max-width: 1440px;
     justify-content: center;
     padding: 120px 0;
     margin: 0 auto;
@@ -1344,7 +1345,7 @@ body.modal-open {
   .footer-input-text {
     display: block;
     margin-bottom: 16px;
-    margin-left: 80px;
+    margin-right: 378px;
   }
   .footer-form {
     display: flex;
@@ -1360,7 +1361,6 @@ body.modal-open {
     justify-content: flex-start;
   }
   .footer-input {
-    margin-left: 80px;
     width: 264px;
   }
   .form-button-footer {
@@ -1375,6 +1375,13 @@ body.modal-open {
   }
   .media-wrap {
     margin-bottom: 0;
+  }
+  .backdrop-menu {
+    display: none;
+  }
+  .text_and_icons-wrap {
+    margin-bottom: 0;
+    margin-right: 80px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
